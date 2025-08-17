@@ -72,4 +72,29 @@ export async function ProcurarSerie(id){
     `
 
     const [registro] = await conection.query(comando,[id])
+    return registro
 } 
+
+
+export async function FiltrarSerie(titulo){
+    const comando = `
+    Select * from series
+    where titulo like ?
+    
+    `
+
+    const [registro] = await conection.query(comando, [`%${titulo}%`])
+    return registro
+}
+
+
+
+export async function DeletarSerie(id){
+    const comando = `
+    DELETE from series
+        where id = ?
+    
+    `
+
+    const[info] = await conection.query(comando,[id])
+}
