@@ -28,3 +28,70 @@ export async function Adicionarfilmes(NovoFilme) {
     return info.insertId;
 }
 
+export async function ProcurarFilme(id) {
+
+    const comando = `
+    Select *from filmes
+        WHERE   id = ?
+    
+    
+    `
+
+    const [registro] = await conection.query(comando, [id])
+    return registro
+    
+}
+
+export async function FiltarFilmes(nome) {
+
+    const comando = `
+    Select *from filmes
+        WHERE   titulo like ?
+    
+    
+    `
+
+    const [registro] = await conection.query(comando, [`%${nome}%`])
+    return registro
+    
+}
+
+
+export async function AlterarFilme(id,NovoFilme) {
+    const comando = `
+    UPDATE filmes
+        SET
+        titulo=?,
+        ano_lancamento=?,
+        genero=?,
+        duracao_minutos=?,
+        diretor=?,
+        avaliacao=?
+
+            WHERE id = ?
+    
+    
+    `
+
+    const [info] = await conection.query(comando,[
+        NovoFilme.titulo,
+        NovoFilme.ano_lancamento,
+        NovoFilme.genero,
+        NovoFilme.duracao_minutos,
+        NovoFilme.diretor,
+        NovoFilme.avaliacao,
+        id
+    ])
+    
+}
+
+export async function DeletarFilme(id) {
+    const comando = `
+   DELETE from filmes
+    WHERE id = ?
+    
+    `
+
+    const [info] = await conection.query(comando,[id])
+    
+}
