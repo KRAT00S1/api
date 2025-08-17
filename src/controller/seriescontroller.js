@@ -1,11 +1,10 @@
+// ============== SERIES ==============
 import * as Series from '../repositorios/seriesrepository.js'
 
 
 import { Router } from "express";
 const endpoints = Router();
 
-// Banco de dados: Series
-//
 
 endpoints.get('/series/filtro', async (req,resp) =>{
     let filtro = req.query.titulo
