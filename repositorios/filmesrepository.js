@@ -1,4 +1,4 @@
-import {conection} from '../conection.js'
+import {conection} from './conection.js'
 
 
 export async function ListarFilmes(){
