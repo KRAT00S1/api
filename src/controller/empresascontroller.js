@@ -1,5 +1,5 @@
 // ============== EMPRESA ==============
-import * as Empresa from '../repositorios/empresasrespository.js'
+import * as Empresa from '../repository/empresasrespository.js'
 
 import { Router } from "express";
 const endpoints = Router()

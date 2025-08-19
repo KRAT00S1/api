@@ -1,5 +1,5 @@
 // ============== SERIES ==============
-import * as Series from '../repositorios/seriesrepository.js'
+import * as Series from '../repository/seriesrepository.js'
 
 
 import { Router } from "express";

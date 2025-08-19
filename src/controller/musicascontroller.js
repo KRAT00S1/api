@@ -1,4 +1,4 @@
-import * as Musicas from '../repositorios/musicasrepository.js'
+import * as Musicas from '../repository/musicasrepository.js'
 
 import { Router } from "express";
 const endpoints = Router()

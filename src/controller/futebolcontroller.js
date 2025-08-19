@@ -1,5 +1,5 @@
 // ============== FUTEBOL ==============
-import * as Futebol from '../repositorios/futebolrepository.js'
+import * as Futebol from '../repository/futebolrepository.js'
 
 import { Router } from "express";
 const endpoints = Router()

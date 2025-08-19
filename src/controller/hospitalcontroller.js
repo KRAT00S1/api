@@ -1,5 +1,5 @@
 // ============== HOSPITAL ==============
-import * as Hospital from '../repositorios/hospitalrepository.js'
+import * as Hospital from '../repository/hospitalrepository.js'
 
 import { Router } from "express";
 const endpoints = Router();

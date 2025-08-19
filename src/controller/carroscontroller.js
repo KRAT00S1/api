@@ -1,5 +1,5 @@
 // ============== CARROS ==============
-import * as Carros from '../repositorios/carrosrepository.js'
+import * as Carros from '../repository/carrosrepository.js'
 
 import { Router } from 'express';
 const endpoints = Router()

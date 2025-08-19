@@ -1,5 +1,5 @@
 // ============== FILMES ==============
-import * as Filmes from '../repositorios/filmesrepository.js'
+import * as Filmes from '../repository/filmesrepository.js'
 
 import { Router } from "express";
 const endpoints = Router();

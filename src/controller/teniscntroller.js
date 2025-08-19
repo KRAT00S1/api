@@ -1,5 +1,5 @@
 // ============== LOJA ==============
-import * as Tenis from '../repositorios/tenisrepository.js'
+import * as Tenis from '../repository/tenisrepository.js'
 
 import { Router } from "express";
 const endpoints = Router();

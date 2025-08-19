@@ -1,5 +1,5 @@
 // ============== ESCOLA ==============
-import * as Escola from '../repositorios/escolarepository.js'
+import * as Escola from '../repository/escolarepository.js'
 
 import { Router } from "express";
 const endpoints = Router();

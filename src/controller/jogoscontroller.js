@@ -1,5 +1,5 @@
 // ============== JOGOS ==============
-import * as Jogos from '../repositorios/jogosrepository.js'
+import * as Jogos from '../repository/jogosrepository.js'
 
 import { Router } from "express";
 const endpoints = Router()
